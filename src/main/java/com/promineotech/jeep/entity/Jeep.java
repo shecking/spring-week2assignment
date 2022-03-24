@@ -6,6 +6,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import java.math.BigDecimal;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 
 @Data
 @Builder
@@ -19,4 +21,10 @@ public class Jeep {
 	private int numDoors;
 	private int wheelSize;
 	private BigDecimal basePrice;
+	
+	@JsonIgnore
+	public Long getModelPK() {
+		return modelPK;
+	}
+	
 }

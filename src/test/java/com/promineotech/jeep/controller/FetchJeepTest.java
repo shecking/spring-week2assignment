@@ -57,7 +57,7 @@ class FetchJeepTest {
 				.trimLevel("Freedom")
 				.numDoors(4)
 				.wheelSize(17)
-				.basePrice(new BigDecimal("39915.00"))
+				.basePrice(new BigDecimal("39365.00"))
 				.build());
 		return listOfJeeps;
 	}
